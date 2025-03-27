@@ -8,7 +8,7 @@ const aiArtData: ICollection = {
         name: "Lexica",
         description: "A collection of AI generated images",
         url: "https://lexica.art/",
-        img: "design/ai-art/lexica.png",
+        logo: "design/ai-art/lexica.png",
         tags: [
           {
             name: "free"
@@ -19,7 +19,7 @@ const aiArtData: ICollection = {
         name: "DreamStudio",
         description: "Online AI-Art generator (Stable Diffusion)",
         url: "https://beta.dreamstudio.ai/dream",
-        img: "design/ai-art/dreamstudio.png",
+        logo: "design/ai-art/dreamstudio.png",
         tags: [
           {
             name: "freemium"
@@ -30,7 +30,7 @@ const aiArtData: ICollection = {
         name: "DALL·E 2",
         description: "Online AI-Art generator",
         url: "https://labs.openai.com/",
-        img: "design/ai-art/dalle.png",
+        logo: "design/ai-art/dalle.png",
         tags: [
           {
             name: "freemium"

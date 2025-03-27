@@ -7,7 +7,8 @@ export interface IItem {
     name: string;
     description: string;
     url: string;
-    img: string;
+    logo: string;
+    screenshot?: string;
     tags: ITag[];
 }
 
