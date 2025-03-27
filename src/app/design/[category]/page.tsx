@@ -15,7 +15,6 @@ export default async function Page({
         <p>Loading...</p>
       ) :  (
         <>
-          <h1 className="text-3xl font-bold">fief</h1>
           <Collection collection={category} />
         </>
       )}

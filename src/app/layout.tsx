@@ -33,25 +33,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* <style jsx global>{`
-          * {
-            font-family: ${rubikLight.style.fontFamily};
-          }
-
-          h1, .bold {
-            font-family: ${rubikBold.style.fontFamily};
-          }
-
-          h2, h3, h4 {
-            font-family: ${rubikMedium.style.fontFamily};
-          }
-        `}</style> */}
-      </head>
-      <body>
+      <head></head>
+      <body
+        className={`${rubikLight.className} antialiased bg-surface min-h-screen`}
+      >
         <Navbar />
 
-        <div className="w-full">
+        <div className="w-full bg-gray-900">
           <div className="flex flex-row m-0 pt-[45px] md:pt-0 h-screen">
             <div className=" p-0 hidden md:block h-full">
               <div className="p-3 h-full overflow-scroll bg-gray-800">
