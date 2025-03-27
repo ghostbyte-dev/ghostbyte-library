@@ -12,7 +12,7 @@ export default function Post(props: any) {
     <div>
 
       <Head>
-        <title>Buckets Of Bookmarks</title>
+        <title>Ghostbyte Library</title>
         <meta
           name="description"
           content="Categorized collections of useful websites and tools"

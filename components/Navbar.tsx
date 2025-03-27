@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="h-[45px] row flex justify-center bg-gray-800 items-center px-4">
         <div className="basis-full">
           <h4 className="text-center m-0 p-0 text-white">
-            Buckets of Bookmarks
+            Ghostbyte Library
           </h4>
         </div>
         <div className="basis-0">

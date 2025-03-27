@@ -1,6 +1,6 @@
 ![Screenshot of landing page](https://github.com/daniebeler/buckets-of-bookmarks/blob/3f44715791a149bf7b4f6321ab2cac99a2d619de/readme-images/screenshot_home.png)
 
-Buckets Of Bookmarks is a collection of many useful websites and tools. They are sorted by category and include some tags to quickly find the right one for your needs.
+Ghostbyte Library is a collection of many useful websites and tools. They are sorted by category and include some tags to quickly find the right one for your needs.
 
 Tags:
 - Open Source

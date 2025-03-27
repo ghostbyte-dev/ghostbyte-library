@@ -7,8 +7,8 @@ const Home = () => {
       <div className="flex flex-row flex-wrap-reverse h-full w-full">
         <div className="basis-full lg:basis-1/2 flex flex-col items-start lg:justify-center p-6">
           <h1 className="flex flex-col">
-            <span className="bold uppercase text-white text-5xl lg:text-6xl xl:text-7xl">Buckets of </span>
-            <span className="bold uppercase text-white text-5xl lg:text-6xl xl:text-7xl">Bookmarks</span>
+            <span className="bold uppercase text-white text-5xl lg:text-6xl xl:text-7xl">Ghostbyte</span>
+            <span className="bold uppercase text-white text-5xl lg:text-6xl xl:text-7xl">Library</span>
           </h1>
           <p className="text-white pt-3 pb-4">
             An ever-growing collection of useful websites and hidden gems of the
