@@ -44,7 +44,7 @@ interface ChildProps {
   toggleMenu: () => void;
 }
 
-const Links = ({ toggleMenu }: ChildProps) => {
+const Links = () => {
   const pathname = usePathname(); // Corrected from useRouter()
 
   return (
@@ -52,7 +52,6 @@ const Links = ({ toggleMenu }: ChildProps) => {
       <li className="my-4">
         <Link
           href="/"
-          onClick={toggleMenu}
           className={`text-white text-sm flex p-3 rounded-lg ${
             pathname === "/" ? "bg-gray-900" : "hover:bg-gray-700"
           }`}
@@ -67,7 +66,6 @@ const Links = ({ toggleMenu }: ChildProps) => {
               <li className="mb-1" key={link.title}>
                 <Link
                   href={link.path}
-                  onClick={toggleMenu}
                   className={`text-white whitespace-nowrap text-sm flex p-3 rounded-lg ${
                     pathname === link.path ? "bg-gray-900" : "hover:bg-gray-700"
                   }`}

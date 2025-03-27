@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => setToggle(!toggle);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-10">
+    <div className="block md:hidden fixed top-0 left-0 w-full z-10">
       {/* Navbar Header */}
       <div className="h-[45px] flex justify-between bg-gray-800 items-center px-4">
         <h4 className="text-white text-center flex-1">Ghostbyte Library</h4>

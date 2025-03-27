@@ -1,5 +1,7 @@
 import { Rubik } from "next/font/google";
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import Links from "../components/Links";
 
 const rubikLight = Rubik({
   subsets: ["latin"],
@@ -46,7 +48,20 @@ export default function RootLayout({
           }
         `}</style> */}
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+
+        <div className="w-full">
+          <div className="flex flex-row m-0 pt-[45px] md:pt-0 h-screen">
+            <div className=" p-0 hidden md:block h-full">
+              <div className="p-3 h-full overflow-scroll bg-gray-800">
+                <Links />
+              </div>
+            </div>
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

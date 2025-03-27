@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FileCode } from "phosphor-react";
 
 const Home = () => {
   return (

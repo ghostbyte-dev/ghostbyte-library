@@ -1,38 +1,23 @@
-"use client"
+"use client";
 
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import Collection from '../../components/Collection';
-
-// Define the Item type if you haven't already
-interface Tag {
-  name: string;
-}
-
-interface Item {
-  name: string;
-  description: string;
-  url: string;
-  img: string;
-  tags: Tag[];
-}
+import { useEffect, useState } from "react";
+import { ICollection } from "../../types/types";
+import Collection from "../../components/Collection";
 
 const Page = () => {
+  const category = "ai-art";
 
-  const category = "ai-art"
-
-  const [categoryData, setCategoryData] = useState<Item[] | null>(null);
+  const [categoryData, setCategoryData] = useState<ICollection | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const loadCategoryData = async () => {
       if (category) {
         try {
-          // Dynamically import the TypeScript data file
           const data = await import(`../../../data/design/${category}.ts`);
-          setCategoryData(data.default); // Assuming you're exporting the default data array
+          setCategoryData(data.default);
         } catch (error) {
-          setCategoryData(null); // Handle case where category file does not exist
+          setCategoryData(null);
         } finally {
           setLoading(false);
         }
@@ -43,15 +28,13 @@ const Page = () => {
   }, [category]);
 
   return (
-    <div>
+    <div className="w-full">
       {loading ? (
         <p>Loading...</p>
       ) : categoryData ? (
         <>
-          <h1>{categoryData[0]?.name}</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            <Collection name='fief' items={categoryData}/>
-          </div>
+          <h1 className="text-3xl font-bold">{categoryData.name}</h1>
+          <Collection name={categoryData.name} items={categoryData.items} />
         </>
       ) : (
         <p>Category not found</p>

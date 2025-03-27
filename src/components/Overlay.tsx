@@ -11,7 +11,7 @@ const Overlay = ({ toggleMenu }: ChildProps) => {
     <div className="bg-gray-800 p-4 overflow-auto fixed inset-0">
       <div className="flex h-screen justify-center items-center">
         <div className="w-full max-w-md">
-          <Links toggleMenu={toggleMenu} />
+          <Links />
         </div>
       </div>
     </div>

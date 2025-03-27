@@ -1,17 +1,17 @@
-interface Tag {
+export interface ITag {
     name: string;
 }
 
 
-interface Item {
+export interface IItem {
     name: string;
     description: string;
     url: string;
     img: string;
-    tags: Tag[];
+    tags: ITag[];
 }
 
-interface Collection {
+export interface ICollection {
     name: string;
-    items: Item[];
+    items: IItem[];
 }
