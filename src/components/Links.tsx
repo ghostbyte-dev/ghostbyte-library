@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Corrected import
+import { usePathname } from "next/navigation";
 import {
   House,
   DeviceMobileSpeaker,
@@ -23,19 +23,19 @@ const navLinks = [
   {
     name: "Design",
     items: [
-      { title: "Icons", path: "/design/icons", icon: Smiley },
-      { title: "Illustrations", path: "/design/illustrations", icon: ImageSquare },
-      { title: "Stock Photos", path: "/design/stock-photos", icon: Camera },
-      { title: "Colors", path: "/design/colors", icon: Palette },
-      { title: "Inspiration", path: "/design/inspiration", icon: Lightbulb },
-      { title: "UI Components", path: "/design/ui-components", icon: DeviceMobileSpeaker },
-      { title: "Typography", path: "/design/fonts", icon: TextAa },
-      { title: "Tools", path: "/design/tools", icon: Wrench },
-      { title: "Browser Extensions", path: "/design/extensions", icon: PuzzlePiece },
-      { title: "Best Practices", path: "/design/best-practices", icon: ThumbsUp },
-      { title: "Design Systems", path: "/design/systems", icon: BezierCurve },
-      { title: "AI Art", path: "/design/ai-art", icon: PaintBrush },
-      { title: "Games", path: "/design/games", icon: GameController },
+      { title: "Icons", path: "/icons", icon: Smiley },
+      { title: "Illustrations", path: "/illustrations", icon: ImageSquare },
+      { title: "Stock Photos", path: "/stock-photos", icon: Camera },
+      { title: "Colors", path: "/colors", icon: Palette },
+      { title: "Inspiration", path: "/inspiration", icon: Lightbulb },
+      { title: "UI Components", path: "/ui-components", icon: DeviceMobileSpeaker },
+      { title: "Typography", path: "/fonts", icon: TextAa },
+      { title: "Tools", path: "/tools", icon: Wrench },
+      { title: "Browser Extensions", path: "/extensions", icon: PuzzlePiece },
+      { title: "Best Practices", path: "/best-practices", icon: ThumbsUp },
+      { title: "Design Systems", path: "/systems", icon: BezierCurve },
+      { title: "AI Art", path: "/ai-art", icon: PaintBrush },
+      { title: "Games", path: "/games", icon: GameController },
     ],
   },
 ];
@@ -45,7 +45,7 @@ interface ChildProps {
 }
 
 const Links = () => {
-  const pathname = usePathname(); // Corrected from useRouter()
+  const pathname = usePathname();
 
   return (
     <ul className="list-none px-0">
