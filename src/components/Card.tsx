@@ -6,7 +6,7 @@ const Card = (props: any) => {
   return (
     <div className="h-full">
       <a
-        className="bg-gray-800 flex h-full flex-col rounded-xl p-4 transform hover:scale-95 transition duration-200 ease-in-out"
+        className="bg-gray-800 flex h-full flex-col shadow-md rounded-lg p-4 transition hover:bg-gray-700"
         target="_blank"
         href={props.url}
         rel="noreferrer"
