@@ -1,6 +1,23 @@
 import Link from "next/link";
 import Collection from "../../components/Collection";
 
+const categoryTitles: { [key: string]: string } = {
+  "ai-art": "AI Art",
+  fonts: "Typography",
+  extensions: "Browser Extensions",
+  "best-practices": "Best Practices",
+  illustrations: "Illustrations",
+  "stock-photos": "Stock Photos",
+  colors: "Colors",
+  inspiration: "Inspiration",
+  "ui-components": "UI Components",
+  tools: "Design Tools",
+  "design-systems": "Design Systems",
+  games: "Games",
+  systems: "Systems",
+  icons: "Icons",
+};
+
 export async function generateStaticParams() {
   const categories = [
     "ai-art",
@@ -22,8 +39,40 @@ export async function generateStaticParams() {
   return categories.map((category) => ({ category }));
 }
 
-export default async function Page({ params }: { params: { category: string } }) {
-  const { category } = await params; // Ensure params is awaited
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
+  const { category } = await params;
+  const categoryName = categoryTitles[category] || category;
+
+  const metadata = {
+    title: `${categoryName} - Ghostbyte Library`,
+    description: `Explore the best collection of ${category.replace(
+      /-/g,
+      " "
+    )} curated by Ghostbyte Library.`,
+    openGraph: {
+      title: `${category.replace(/-/g, " ").toUpperCase()} - Ghostbyte Library`,
+      description: `Explore the best collection of ${category.replace(
+        /-/g,
+        " "
+      )} curated by Ghostbyte Library.`,
+      url: `https://ghostbyte.dev/${category}`,
+      siteName: "Ghostbyte Library",
+    },
+  };
+
+  return metadata;
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
+  const { category } = await params;
 
   return (
     <div className="w-full md:ml-64">
