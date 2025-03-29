@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className="block md:hidden fixed top-0 left-0 w-full z-10">
       {/* Navbar Header */}
       <div className="h-[45px] flex justify-between bg-gray-800 items-center px-4">
-        <Link href="/">
+        <Link href="/" onClick={toggleMenu}>
           <h4 className="text-white text-center flex-1">Ghostbyte Library</h4>
         </Link>
         <button
@@ -51,8 +51,8 @@ const Navbar = () => {
               </button>
             </div>
 
-            {/* Links Section (Content may overflow, but whole overlay scrolls) */}
-            <Links />
+            {/* Links Section */}
+            <Links toggleMenu={toggleMenu} />
           </div>
         </div>
       )}
