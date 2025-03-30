@@ -13,8 +13,8 @@ const categoryTitles: { [key: string]: string } = {
   "ui-components": "UI Components",
   tools: "Design Tools",
   "design-systems": "Design Systems",
-  games: "Games",
-  systems: "Systems",
+  games: "Design Games",
+  systems: "Design Systems",
   icons: "Icons",
 };
 
