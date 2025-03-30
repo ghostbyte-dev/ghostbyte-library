@@ -24,9 +24,22 @@ const Navbar = () => {
     <div className="block md:hidden fixed top-0 left-0 w-full z-10">
       {/* Navbar Header */}
       <div className="h-[45px] flex justify-between bg-gray-800 items-center px-4">
-        <Link href="/" onClick={toggleMenu}>
-          <h4 className="text-white text-center flex-1">Ghostbyte Library</h4>
+        <Link className="" href="/">
+          <div className="flex items-center">
+            <img
+              src="/logo.svg"
+              className="rounded-sm"
+              height="32px"
+              width="32px"
+              alt=""
+            />
+
+            <span className="text-white ml-3 font-medium text-center flex-1">
+              Ghostbyte Library
+            </span>
+          </div>
         </Link>
+
         <button
           onClick={toggleMenu}
           aria-expanded={toggle}
