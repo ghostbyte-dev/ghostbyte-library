@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const aiArtData: ICollection = {
   name: "AI Art",
+  introduction: "Explore tools that harness the power of artificial intelligence to generate stunning artwork. From text-to-image generators to AI-assisted design tools, these resources help artists and creators bring their visions to life.",
   items:
     [
       {

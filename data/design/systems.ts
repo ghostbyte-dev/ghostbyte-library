@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const designSystemsData: ICollection = {
   name: "Design Systems",
+  introduction: "Explore comprehensive design systems that provide reusable components, guidelines, and frameworks. Learn from industry leaders and streamline your design and development process.",
   items: [
     {
       name: "Material Design",

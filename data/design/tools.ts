@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const designToolsData: ICollection = {
   name: "Design Tools",
+  introduction: "A collection of powerful design-focused tools to enhance your creative workflow. From SEO checkers and pattern generators to mockup creators and image optimizers, these resources help you refine and perfect your designs with ease.",
   items: [
     {
       name: "Toptal Checklist",

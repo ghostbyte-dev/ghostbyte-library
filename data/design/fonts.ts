@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const typographyData: ICollection = {
   name: "Typography",
+  introduction: "Explore a variety of free and commercial fonts to bring personality to your designs. From elegant serifs to modern sans-serif typefaces, this collection helps you find the perfect typography for branding, websites, and print materials.",
   items: [
     {
       name: "Google Fonts",

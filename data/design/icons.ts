@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const iconsData: ICollection = {
   name: "Icons",
+  introduction: "A collection of high-quality icon libraries, ranging from free vector icons to premium sets. Whether you're designing websites, apps, or presentations, these resources offer a variety of styles to fit your needs.",
   items: [
     {
       name: "Phosphor Icons",

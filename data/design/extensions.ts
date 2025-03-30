@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const browserExtensionsData: ICollection = {
   name: "Browser Extensions",
+  introduction: "Discover browser and design extensions that streamline your workflow. From developer tools to UI enhancements, these handy add-ons help you work faster and more efficiently.",
   items: [
     {
       name: "Wappalyzer",

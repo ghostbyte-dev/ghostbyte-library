@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const stockPhotosData: ICollection = {
   name: "Stock Photos",
+  introduction: "Find the best sources for free and premium stock photos to enhance your projects. Whether you need high-resolution images for websites, social media, or print, these platforms provide diverse collections for every creative need.",
   items: [
     {
       name: "Unsplash",

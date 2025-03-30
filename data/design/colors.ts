@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const colorsData: ICollection = {
   name: "Colors",
+  introduction: "Explore color palettes, generators, and inspiration tools to perfect your color schemes. Whether you need harmonious combinations or unique shades, these resources help you create visually appealing designs.",
   items: [
     {
       name: "Hypercolor",

@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const bestPracticesData: ICollection = {
   name: "Best Practices",
+  introduction: "A collection of guides, articles, and resources focused on design and development best practices. Learn how to create user-friendly interfaces, optimize performance, and follow industry standards.",
   items: [
     {
       name: "Checklist Design",

@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const illustrationsData: ICollection = {
   name: "Illustrations",
+  introduction: "Find beautifully crafted illustrations to enhance your projects. Whether you need free vector graphics, hand-drawn elements, or customizable assets, this collection has something for every style.",
   items: [
     {
       name: "unDraw",

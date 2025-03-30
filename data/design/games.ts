@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const designGamesData: ICollection = {
   name: "Design Games",
+  introduction: "Learn design in a fun and interactive way with games that challenge your skills. From color matching and typography quizzes to UI/UX puzzles, these games make mastering design principles both engaging and educational.",
   items: [
     {
       name: "The Bézier Game",

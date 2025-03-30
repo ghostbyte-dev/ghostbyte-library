@@ -14,5 +14,6 @@ export interface IItem {
 
 export interface ICollection {
     name: string;
+    introduction: string;
     items: IItem[];
 }

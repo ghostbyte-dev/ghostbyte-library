@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const uiComponentsData: ICollection = {
   name: "UI Components",
+  introduction: "A collection of pre-designed UI components and libraries to speed up development. Find buttons, forms, navigation elements, and more to create polished, user-friendly interfaces.",
   items: [
     {
       name: "Tailwind UI",

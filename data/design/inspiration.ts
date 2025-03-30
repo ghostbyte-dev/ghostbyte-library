@@ -2,6 +2,7 @@ import { ICollection } from "../../src/types/types";
 
 const inspirationData: ICollection = {
   name: "Inspiration",
+  introduction: "A curated selection of design showcases, UI/UX galleries, and creative portfolios to spark new ideas. Whether you're working on a website, app, or branding project, these platforms offer endless inspiration from top designers and creators.",
   items: [
     {
       name: "Wall of Inspiration",

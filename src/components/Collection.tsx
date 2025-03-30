@@ -56,10 +56,12 @@ const Collection = ({ collection }: { collection: string }) => {
     <div className="p-4">
       {categoryData && (
         <>
-          <div className="container mt-36 mb-36">
+          <div className="container mt-36 mb-20 flex flex-col items-center">
             <h1 className="text-center text-white font-bold text-4xl uppercase">
               {categoryData.name}
             </h1>
+
+            <p className="text-white mt-10 max-w-3xl">{categoryData.introduction}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {categoryData &&
