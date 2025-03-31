@@ -1,3 +1,4 @@
+import { Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -128,11 +129,14 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="mt-10 pb-10 text-center text-white">
-        Developed with ❤️ by{" "}
-        <Link href="https://ghostbyte.dev">
-          <strong className="text-white">Ghostbyte</strong>
-        </Link>
+      <div className="w-full flex justify-center py-10">
+        <div className="p-3 text-center text-white flex">
+          Developed with{" "}
+          <Heart className="h-6 w-6 mx-1 text-yellow-400 fill-current" /> by
+          <Link href="https://ghostbyte.dev">
+            <strong className="text-yellow-400 ml-1">Ghostbyte</strong>
+          </Link>
+        </div>
       </div>
     </div>
   );
