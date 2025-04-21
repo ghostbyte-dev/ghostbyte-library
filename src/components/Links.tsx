@@ -28,7 +28,11 @@ const navLinks = [
       { title: "Stock Photos", path: "/stock-photos", icon: Camera },
       { title: "Colors", path: "/colors", icon: Palette },
       { title: "Inspiration", path: "/inspiration", icon: Lightbulb },
-      { title: "UI Components", path: "/ui-components", icon: DeviceMobileSpeaker },
+      {
+        title: "UI Components",
+        path: "/ui-components",
+        icon: DeviceMobileSpeaker,
+      },
       { title: "Typography", path: "/fonts", icon: TextAa },
       { title: "Tools", path: "/tools", icon: Wrench },
       { title: "Browser Extensions", path: "/extensions", icon: PuzzlePiece },
@@ -72,7 +76,8 @@ const Links: React.FC<LinksProps> = ({ toggleMenu }) => {
                     pathname === link.path ? "bg-gray-900" : "hover:bg-gray-700"
                   }`}
                 >
-                  <link.icon color="white" size={20} className="mr-2" /> {link.title}
+                  <link.icon color="white" size={20} className="mr-2" />{" "}
+                  {link.title}
                 </Link>
               </li>
             ))}

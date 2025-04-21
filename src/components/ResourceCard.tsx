@@ -1,18 +1,23 @@
-import Link from "next/link"
-import { ExternalLink } from "lucide-react"
-import { ITag } from "../types/types"
-import Image from "next/image"
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
+import { ITag } from "../types/types";
+import Image from "next/image";
 
 interface ResourceCardProps {
-    title: string
-    description: string
-    tags: ITag[]
-    logo: string
-    url: string
-  
+  title: string;
+  description: string;
+  tags: ITag[];
+  logo: string;
+  url: string;
 }
 
-export function ResourceCard({ title, description, tags, logo, url }: ResourceCardProps) {
+export function ResourceCard({
+  title,
+  description,
+  tags,
+  logo,
+  url,
+}: ResourceCardProps) {
   // Map of gradients for different logos
   const gradientMap: Record<string, string> = {
     google: "from-blue-500 to-green-500",
@@ -24,9 +29,9 @@ export function ResourceCard({ title, description, tags, logo, url }: ResourceCa
     fontshare: "from-violet-500 to-indigo-500",
     fontspace: "from-rose-500 to-pink-500",
     default: "from-rose-500 to-pink-500",
-  }
+  };
 
-  const gradient = gradientMap[logo] || gradientMap.default
+  const gradient = gradientMap[logo] || gradientMap.default;
 
   return (
     <Link
@@ -41,15 +46,15 @@ export function ResourceCard({ title, description, tags, logo, url }: ResourceCa
       <div className="relative z-10">
         <div className="flex justify-between items-start mb-4">
           <Image
-                        src={"/images/" + logo}
-                        alt=""
-                        width={40}
-                        height={40}
-                        className="rounded-lg"
-                      />
+            src={"/images/" + logo}
+            alt=""
+            width={40}
+            height={40}
+            className="rounded-lg"
+          />
 
           <ExternalLink className="h-4 w-4 text-gray-400 opacity-0 transition-opacity group-hover:opacity-100" />
-            </div>
+        </div>
 
         <h3 className="text-xl font-bold text-white mb-1">{title}</h3>
         <p className="text-gray-400 mb-4">{description}</p>
@@ -59,7 +64,9 @@ export function ResourceCard({ title, description, tags, logo, url }: ResourceCa
             <span
               key={index}
               className={`text-xs font-medium px-2 py-1 rounded-full ${
-                tag.name === "OPEN SOURCE" ? "bg-green-900/30 text-green-400" : "bg-purple-900/30 text-purple-400"
+                tag.name === "OPEN SOURCE"
+                  ? "bg-green-900/30 text-green-400"
+                  : "bg-purple-900/30 text-purple-400"
               }`}
             >
               {tag.name}
@@ -68,5 +75,5 @@ export function ResourceCard({ title, description, tags, logo, url }: ResourceCa
         </div>
       </div>
     </Link>
-  )
+  );
 }

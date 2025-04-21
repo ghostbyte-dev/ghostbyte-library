@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import {
   Type,
   Palette,
@@ -12,16 +12,21 @@ import {
   Globe,
   BookOpen,
   type LucideIcon,
-} from "lucide-react"
+} from "lucide-react";
 
 interface CategoryCardProps {
-  title: string
-  icon: string
-  description: string
-  gradient: string
+  title: string;
+  icon: string;
+  description: string;
+  gradient: string;
 }
 
-export function CategoryCard({ title, icon, description, gradient }: CategoryCardProps) {
+export function CategoryCard({
+  title,
+  icon,
+  description,
+  gradient,
+}: CategoryCardProps) {
   const iconMap: Record<string, LucideIcon> = {
     type: Type,
     palette: Palette,
@@ -34,9 +39,9 @@ export function CategoryCard({ title, icon, description, gradient }: CategoryCar
     gamepad: Gamepad2,
     globe: Globe,
     book: BookOpen,
-  }
+  };
 
-  const IconComponent = iconMap[icon] || Type
+  const IconComponent = iconMap[icon] || Type;
 
   return (
     <Link href={`/category/${title.toLowerCase()}`}>
@@ -57,5 +62,5 @@ export function CategoryCard({ title, icon, description, gradient }: CategoryCar
         </div>
       </div>
     </Link>
-  )
+  );
 }

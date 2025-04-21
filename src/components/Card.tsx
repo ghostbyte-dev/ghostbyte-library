@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 
@@ -22,8 +22,6 @@ const Card = (props: any) => {
             />
           </div>
 
-          
-
           <h2 className="text-white text-lg text-center">{props.name}</h2>
           <p className="text-gray-300 text-sm pt-1 text-center">
             {props.description}
@@ -46,7 +44,10 @@ const Card = (props: any) => {
                   );
                 } else if (item.name === "freemium") {
                   return (
-                    <div key={item.name} className="text-xs text-orange-500 p-1">
+                    <div
+                      key={item.name}
+                      className="text-xs text-orange-500 p-1"
+                    >
                       FREEMIUM
                     </div>
                   );
@@ -58,13 +59,19 @@ const Card = (props: any) => {
                   );
                 } else if (item.name === "rss") {
                   return (
-                    <div key={item.name} className="text-xs text-yellow-500 p-1">
+                    <div
+                      key={item.name}
+                      className="text-xs text-yellow-500 p-1"
+                    >
                       RSS
                     </div>
                   );
                 } else if (item.name === "pwa") {
                   return (
-                    <div key={item.name} className="text-xs text-purple-600 p-1">
+                    <div
+                      key={item.name}
+                      className="text-xs text-purple-600 p-1"
+                    >
                       PWA
                     </div>
                   );
@@ -96,19 +103,17 @@ const Card = (props: any) => {
               })}
           </div>
 
-          <div className="flex-1">
-
-          </div>
+          <div className="flex-1"></div>
 
           {props.screenshot && (
             <div className="relative w-full aspect-video mt-4">
-            <Image
-              src={"/images/" + props.screenshot}
-              alt=""
-              layout="fill"
-              className="rounded-lg object-cover"
-            />
-          </div>
+              <Image
+                src={"/images/" + props.screenshot}
+                alt=""
+                layout="fill"
+                className="rounded-lg object-cover"
+              />
+            </div>
           )}
         </div>
         {/*  <div>
