@@ -38,22 +38,3 @@
         }
     }
 }
-
-body {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-}
-
-h1,
-.bold {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 900;
-}
-
-h2,
-h3,
-h4,
-.medium {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}

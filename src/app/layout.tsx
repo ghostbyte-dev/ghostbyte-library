@@ -1,25 +1,9 @@
-import { Rubik } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Links from "../components/Links";
 
-const rubikLight = Rubik({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
-
-const rubikMedium = Rubik({
-  subsets: ["latin"],
-  weight: "500",
-  display: "swap",
-});
-
-const rubikBold = Rubik({
-  subsets: ["latin"],
-  weight: "900",
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ghostbyte Library",
@@ -38,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body
-        className={`${rubikLight.className} antialiased min-h-screen bg-[#040217]`}
+        className={`${inter.className} antialiased min-h-screen bg-[#040217]`}
       >
         <Navbar />
 
