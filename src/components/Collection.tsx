@@ -16,6 +16,7 @@ import designToolsData from "../../data/design/tools";
 import designSystemsData from "../../data/design/systems";
 import designGamesData from "../../data/design/games";
 import iconsData from "../../data/design/icons";
+import { ResourceCard } from "./ResourceCard";
 
 const Collection = ({ collection }: { collection: string }) => {
   const [categoryData, setCategoryData] = useState<ICollection | null>(null);
@@ -68,12 +69,11 @@ const Collection = ({ collection }: { collection: string }) => {
               categoryData.items.map((item: IItem) => {
                 return (
                   <div key={item.name}>
-                    <Card
-                      name={item.name}
+                    <ResourceCard
+                      title={item.name}
                       description={item.description}
                       url={item.url}
-                      img={item.logo}
-                      screenshot={item.screenshot}
+                      logo={item.logo}
                       tags={item.tags}
                     />
                   </div>

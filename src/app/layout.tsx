@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body
-        className={`${rubikLight.className} antialiased min-h-screen bg-gray-900`}
+        className={`${rubikLight.className} antialiased min-h-screen bg-[#040217]`}
       >
         <Navbar />
 
