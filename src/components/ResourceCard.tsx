@@ -11,6 +11,20 @@ interface ResourceCardProps {
   url: string;
 }
 
+const tagLabels: Record<string, string> = {
+  os: "Open Source",
+  free: "Free",
+  freemium: "Freemium",
+  paid: "Paid",
+};
+
+const tagColors: Record<string, string> = {
+  os: "bg-green-900/30 text-green-400",
+  free: "bg-purple-900/30 text-purple-400",
+  freemium: "bg-orange-900/30 text-orange-400",
+  paid: "bg-red-900/30 text-red-400",
+};
+
 export function ResourceCard({
   title,
   description,
@@ -37,20 +51,16 @@ export function ResourceCard({
     <Link
       href={url}
       target="_blank"
-      className="group relative block overflow-hidden rounded-xl border border-purple-800/30 bg-black/20 p-6 transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
+      className="group h-full relative block overflow-hidden rounded-xl border border-purple-800/30 bg-black/20 p-6 transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
     >
-      <div
-        className={`absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br ${gradient} opacity-20 blur-2xl transition-all group-hover:opacity-30`}
-      />
-
       <div className="relative z-10">
         <div className="flex justify-between items-start mb-4">
           <Image
             src={`/images/${logo}`}
             alt=""
-            width={40}
-            height={40}
-            className="rounded-lg"
+            width={46}
+            height={46}
+            className="rounded-md"
           />
 
           <ExternalLink className="h-4 w-4 text-gray-400 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -60,19 +70,20 @@ export function ResourceCard({
         <p className="text-gray-400 mb-4">{description}</p>
 
         <div className="flex flex-wrap gap-2">
-          {tags.map((tag, index) => (
-            <span
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-              key={index}
-              className={`text-xs font-medium px-2 py-1 rounded-full ${
-                tag.name === "OPEN SOURCE"
-                  ? "bg-green-900/30 text-green-400"
-                  : "bg-purple-900/30 text-purple-400"
-              }`}
-            >
-              {tag.name}
-            </span>
-          ))}
+          {tags.map((tag, index) => {
+            const label = tagLabels[tag.name] || tag.name;
+            const color = tagColors[tag.name] || "bg-gray-800 text-gray-300";
+
+            return (
+              <span
+                // biome-ignore lint/suspicious/noArrayIndexKey: Tag names are stable and order is not critical here
+                key={index}
+                className={`text-xs font-medium px-2 py-1 rounded-full ${color}`}
+              >
+                {label}
+              </span>
+            );
+          })}
         </div>
       </div>
     </Link>

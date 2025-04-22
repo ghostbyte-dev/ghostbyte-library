@@ -30,7 +30,7 @@ export default function HeroSection() {
         </p>
 
         {/* Featured categories */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
           <div className="flex flex-col items-center p-4 rounded-xl bg-purple-900/10 border border-purple-800/30 hover:bg-purple-900/20 hover:border-purple-700/40 transition-colors">
             <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 mb-3">
               <Star className="h-6 w-6 text-white" />
@@ -55,15 +55,15 @@ export default function HeroSection() {
             </div>
             <span className="text-white font-medium">Editor's Choice</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex justify-center">
           <Link
-            href="/#projects"
+            href="/#popular"
             className="flex bg-gradient-to-r font-semibold from-purple-700 to-cyan-600 hover:from-purple-800 hover:to-cyan-700 text-white border-0 h-12 px-6 rounded-md"
           >
             <span className="relative z-10 flex items-center">
-              Browse All Categories
+              Browse Popular Categories
               <ArrowRight className="ml-2 h-4 w-4" />
             </span>
           </Link>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Collection from "../../components/Collection";
 import { Heart } from "lucide-react";
+import Footer from "../../components/Footer";
 
 const categoryTitles: { [key: string]: string } = {
   "ai-art": "AI Art",
@@ -81,15 +82,8 @@ export default async function Page({
         <>
           <Collection collection={category} />
 
-          <div className="w-full flex justify-center py-10">
-            <div className="p-3 text-center text-white flex">
-              Developed with{" "}
-              <Heart className="h-6 w-6 mx-1 text-yellow-400 fill-current" /> by
-              <Link href="https://ghostbyte.dev">
-                <strong className="text-yellow-400 ml-1">Ghostbyte</strong>
-              </Link>
-            </div>
-          </div>
+          <div className="h-20" />
+          <Footer />
         </>
       )}
     </div>

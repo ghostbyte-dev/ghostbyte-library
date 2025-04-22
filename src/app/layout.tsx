@@ -19,10 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} antialiased min-h-screen bg-[#040217]`}
-      >
+    <html
+      lang="en"
+      className="bg-[#040217] scroll-smooth selection:bg-blue-900 selection:text-white"
+    >
+      <body className={`${inter.className} antialiased min-h-screen `}>
         <Navbar />
 
         <div className="w-full">

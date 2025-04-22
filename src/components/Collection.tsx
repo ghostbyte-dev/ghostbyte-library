@@ -58,11 +58,15 @@ const Collection = ({ collection }: { collection: string }) => {
       {categoryData && (
         <>
           <div className="container mt-36 mb-20 flex flex-col items-center">
-            <h1 className="text-center text-white font-bold text-4xl uppercase">
+            {/*  <div className={`p-2 rounded-md ${gradient}`}>
+              <Icon size={20} className="text-white" />
+            </div> */}
+
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-300">
               {categoryData.name}
             </h1>
 
-            <p className="text-white mt-10 max-w-3xl text-center">
+            <p className="max-w-[900px] mt-4 text-zinc-400 text-center md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               {categoryData.introduction}
             </p>
           </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="py-16 text-center">
+    <section className="py-28 text-center">
       <div className="max-w-3xl mx-auto flex flex-col items-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Want to suggest a resource?

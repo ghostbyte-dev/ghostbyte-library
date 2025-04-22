@@ -5,9 +5,14 @@ export default function Footer() {
     <footer className="border-t border-purple-900/30 py-8">
       <div className="container mx-auto px-4 text-center text-gray-400">
         <div className="flex items-center justify-center mb-4">
-          <GhostIcon className="h-6 w-6 text-white mr-2" />
+          <img
+            src="/images/ghostbyte_logo_white.svg"
+            alt="Ghostbyte logo white"
+            height={24}
+            className="h-6 mr-2"
+          />
           <span className="text-xl font-bold text-white">Ghostbyte</span>
-          <span className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent ml-2">
+          <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-text text-transparent ml-2">
             Library
           </span>
         </div>
