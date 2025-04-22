@@ -7,7 +7,7 @@ import PopularCategories from "../components/landingpage/PopularCategories";
 
 const Home = () => {
   return (
-    <div className="bg-gray-900 md:ml-64 min-h-screen w-full flex flex-col items-center">
+    <div className="md:ml-64 w-full">
       <HeroSection />
 
       <PopularCategories />

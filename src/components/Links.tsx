@@ -18,28 +18,64 @@ import {
   Wrench,
   PuzzlePiece,
 } from "phosphor-react";
+import { iconMap } from "../lib/Icons";
 
 const navLinks = [
   {
     name: "Design",
     items: [
-      { title: "Icons", path: "/icons", icon: Smiley },
-      { title: "Illustrations", path: "/illustrations", icon: ImageSquare },
-      { title: "Stock Photos", path: "/stock-photos", icon: Camera },
-      { title: "Colors", path: "/colors", icon: Palette },
-      { title: "Inspiration", path: "/inspiration", icon: Lightbulb },
+      {
+        title: "Icons",
+        path: "/icons",
+      },
+      {
+        title: "Illustrations",
+        path: "/illustrations",
+      },
+      {
+        title: "Stock Photos",
+        path: "/stock-photos",
+      },
+      {
+        title: "Colors",
+        path: "/colors",
+      },
+      {
+        title: "Inspiration",
+        path: "/inspiration",
+      },
       {
         title: "UI Components",
         path: "/ui-components",
-        icon: DeviceMobileSpeaker,
       },
-      { title: "Typography", path: "/fonts", icon: TextAa },
-      { title: "Tools", path: "/tools", icon: Wrench },
-      { title: "Browser Extensions", path: "/extensions", icon: PuzzlePiece },
-      { title: "Best Practices", path: "/best-practices", icon: ThumbsUp },
-      { title: "Design Systems", path: "/systems", icon: BezierCurve },
-      { title: "AI Art", path: "/ai-art", icon: PaintBrush },
-      { title: "Games", path: "/games", icon: GameController },
+      {
+        title: "Typography",
+        path: "/fonts",
+      },
+      {
+        title: "Tools",
+        path: "/tools",
+      },
+      {
+        title: "Browser Extensions",
+        path: "/extensions",
+      },
+      {
+        title: "Best Practices",
+        path: "/best-practices",
+      },
+      {
+        title: "Design Systems",
+        path: "/systems",
+      },
+      {
+        title: "AI Art",
+        path: "/ai-art",
+      },
+      {
+        title: "Games",
+        path: "/games",
+      },
     ],
   },
 ];
@@ -67,20 +103,28 @@ const Links: React.FC<LinksProps> = ({ toggleMenu }) => {
       {navLinks.map((bucket) => (
         <li key={bucket.name}>
           <ul className="list-none px-0">
-            {bucket.items.map((link) => (
-              <li className="mb-1" key={link.title}>
-                <Link
-                  href={link.path}
-                  onClick={toggleMenu}
-                  className={`text-white whitespace-nowrap text-sm flex p-3 rounded-lg ${
-                    pathname === link.path ? "bg-gray-900" : "hover:bg-gray-700"
-                  }`}
-                >
-                  <link.icon color="white" size={20} className="mr-2" />{" "}
-                  {link.title}
-                </Link>
-              </li>
-            ))}
+            {bucket.items.map((link) => {
+              const { gradient, icon: Icon } = iconMap[link.title];
+
+              return (
+                <li className="mb-1" key={link.title}>
+                  <Link
+                    href={link.path}
+                    onClick={toggleMenu}
+                    className={`text-white whitespace-nowrap text-sm flex items-center gap-3 p-3 rounded-lg ${
+                      pathname === link.path
+                        ? "bg-gray-900"
+                        : "hover:bg-gray-700"
+                    }`}
+                  >
+                    <div className={`p-2 rounded-md ${gradient}`}>
+                      <Icon size={20} className="text-white" />
+                    </div>
+                    {link.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </li>
       ))}

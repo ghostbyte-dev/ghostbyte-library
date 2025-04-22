@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
-import { ITag } from "../types/types";
+import type { ITag } from "../types/types";
 import Image from "next/image";
 
 interface ResourceCardProps {
@@ -41,12 +41,12 @@ export function ResourceCard({
     >
       <div
         className={`absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br ${gradient} opacity-20 blur-2xl transition-all group-hover:opacity-30`}
-      ></div>
+      />
 
       <div className="relative z-10">
         <div className="flex justify-between items-start mb-4">
           <Image
-            src={"/images/" + logo}
+            src={`/images/${logo}`}
             alt=""
             width={40}
             height={40}
@@ -62,6 +62,7 @@ export function ResourceCard({
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <span
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
               className={`text-xs font-medium px-2 py-1 rounded-full ${
                 tag.name === "OPEN SOURCE"

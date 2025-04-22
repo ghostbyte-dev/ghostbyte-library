@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ICollection, IItem } from "../types/types";
+import type { ICollection, IItem } from "../types/types";
 import Card from "./Card";
 import aiArtData from "../../data/design/ai-art";
 import browserExtensionsData from "../../data/design/extensions";
@@ -62,25 +62,24 @@ const Collection = ({ collection }: { collection: string }) => {
               {categoryData.name}
             </h1>
 
-            <p className="text-white mt-10 max-w-3xl">
+            <p className="text-white mt-10 max-w-3xl text-center">
               {categoryData.introduction}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {categoryData &&
-              categoryData.items.map((item: IItem) => {
-                return (
-                  <div key={item.name}>
-                    <ResourceCard
-                      title={item.name}
-                      description={item.description}
-                      url={item.url}
-                      logo={item.logo}
-                      tags={item.tags}
-                    />
-                  </div>
-                );
-              })}
+            {categoryData?.items.map((item: IItem) => {
+              return (
+                <div key={item.name}>
+                  <ResourceCard
+                    title={item.name}
+                    description={item.description}
+                    url={item.url}
+                    logo={item.logo}
+                    tags={item.tags}
+                  />
+                </div>
+              );
+            })}
           </div>
         </>
       )}

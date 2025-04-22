@@ -41,6 +41,7 @@ const Navbar = () => {
         </Link>
 
         <button
+          type="button"
           onClick={toggleMenu}
           aria-expanded={toggle}
           aria-controls="mobile-menu"
@@ -57,6 +58,7 @@ const Navbar = () => {
             {/* Close Button */}
             <div className="flex justify-end">
               <button
+                type="button"
                 onClick={toggleMenu}
                 className="text-white focus:outline-none"
               >

@@ -20,7 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
       <body
         className={`${inter.className} antialiased min-h-screen bg-[#040217]`}
       >
@@ -29,7 +28,7 @@ export default function RootLayout({
         <div className="w-full">
           <div className="flex flex-row m-0 pt-[45px] md:pt-0 h-screen">
             <div className=" p-0 hidden md:block w-64 fixed h-full">
-              <div className="p-3 h-full overflow-scroll bg-gray-800">
+              <div className="p-3 h-full overflow-scroll bg-[#030014]/60 backdrop-blur-xl">
                 <Links />
               </div>
             </div>
