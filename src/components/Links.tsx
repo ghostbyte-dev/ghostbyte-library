@@ -117,8 +117,8 @@ const Links: React.FC<LinksProps> = ({ toggleMenu }) => {
                     onClick={toggleMenu}
                     className={`text-white whitespace-nowrap text-sm flex items-center gap-3 p-3 rounded-lg ${
                       pathname === link.path
-                        ? "bg-gray-900"
-                        : "hover:bg-gray-700"
+                        ? "bg-white/10 backdrop-blur-sm"
+                        : "hover:bg-white/5 backdrop-blur-sm"
                     }`}
                   >
                     <div

@@ -54,8 +54,8 @@ const Navbar = () => {
 
       {/* Overlay Menu (Entire overlay is scrollable) */}
       {toggle && (
-        <div className="fixed inset-0 bg-gray-800 p-4 overflow-y-auto">
-          <div className="w-full max-w-md bg-gray-900 p-4 rounded-lg mx-auto">
+        <div className="fixed inset-0 bg-[#030014]/60 backdrop-blur-xl p-4 overflow-y-auto">
+          <div className="w-full max-w-md p-4 rounded-lg mx-auto">
             {/* Close Button */}
             <div className="flex justify-end">
               <button
