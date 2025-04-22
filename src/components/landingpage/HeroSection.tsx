@@ -4,7 +4,7 @@ import { ArrowRight, Star } from "phosphor-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen py-16 flex justify-center items-center">
+    <section className="relative min-h-screen py-16 px-6 flex justify-center items-center">
       {/* Decorative elements */}
       <div className="absolute -left-20 top-10 h-64 w-64 rounded-full bg-purple-600/10 blur-3xl" />
       <div className="absolute right-20 top-40 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl" />
@@ -18,7 +18,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
           <span className="bg-gradient-to-r from-purple-400 via-violet-400 to-cyan-300 bg-clip-text text-transparent">
             Discover Digital Resources
           </span>

@@ -2,7 +2,7 @@ import { CategoryCard } from "./CategoryCard";
 
 export default function PopularCategories() {
   return (
-    <section className="py-12" id="popular">
+    <section className="py-12 px-6" id="popular">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent mb-4">
           Popular Categories

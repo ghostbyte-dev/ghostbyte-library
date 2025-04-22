@@ -19,6 +19,7 @@ import {
   PuzzlePiece,
 } from "phosphor-react";
 import { iconMap } from "../lib/Icons";
+import { HouseIcon } from "lucide-react";
 
 const navLinks = [
   {
@@ -93,11 +94,14 @@ const Links: React.FC<LinksProps> = ({ toggleMenu }) => {
         <Link
           href="/"
           onClick={toggleMenu}
-          className={`text-white text-sm flex p-3 rounded-lg ${
+          className={`text-white text-sm flex items-center gap-3 p-3 rounded-lg ${
             pathname === "/" ? "bg-gray-900" : "hover:bg-gray-700"
           }`}
         >
-          <House color="white" size={20} className="mr-2" /> Home
+          <div className="p-2 rounded-md bg-gradient-to-br from-purple-500 to-cyan-600">
+            <HouseIcon size={20} className="text-white" />
+          </div>
+          Home
         </Link>
       </li>
       {navLinks.map((bucket) => (
@@ -117,7 +121,9 @@ const Links: React.FC<LinksProps> = ({ toggleMenu }) => {
                         : "hover:bg-gray-700"
                     }`}
                   >
-                    <div className={`p-2 rounded-md ${gradient}`}>
+                    <div
+                      className={`p-2 rounded-md bg-gradient-to-br ${gradient}`}
+                    >
                       <Icon size={20} className="text-white" />
                     </div>
                     {link.title}
