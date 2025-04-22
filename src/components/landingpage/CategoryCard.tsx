@@ -16,6 +16,7 @@ import {
 
 interface CategoryCardProps {
   title: string;
+  slug: string;
   icon: string;
   description: string;
   gradient: string;
@@ -23,6 +24,7 @@ interface CategoryCardProps {
 
 export function CategoryCard({
   title,
+  slug,
   icon,
   description,
   gradient,
@@ -44,11 +46,11 @@ export function CategoryCard({
   const IconComponent = iconMap[icon] || Type;
 
   return (
-    <Link href={`/category/${title.toLowerCase()}`}>
+    <Link href={`/${slug}`}>
       <div className="group relative overflow-hidden rounded-xl border border-purple-800/30 bg-black/20 p-6 transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20">
         <div
           className={`absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br ${gradient} opacity-20 blur-2xl transition-all group-hover:opacity-30`}
-        ></div>
+        />
 
         <div className="relative z-10">
           <div

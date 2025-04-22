@@ -15,36 +15,42 @@ export default function PopularCategories() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <CategoryCard
           title="Typography"
+          slug="fonts"
           icon="type"
           description="Fonts, type systems, and text styling resources"
           gradient="from-purple-500 to-pink-500"
         />
         <CategoryCard
           title="AI Art"
+          slug="ai-art"
           icon="palette"
           description="AI-powered art generation tools and resources"
           gradient="from-cyan-500 to-blue-500"
         />
         <CategoryCard
           title="Stock Photos"
+          slug="stock-photos"
           icon="image"
           description="Free and premium stock photography collections"
           gradient="from-green-500 to-emerald-500"
         />
         <CategoryCard
           title="Design Tools"
+          slug="tools"
           icon="wrench"
           description="Software and utilities for designers"
           gradient="from-orange-500 to-amber-500"
         />
         <CategoryCard
           title="Icons"
+          slug="icons"
           icon="shapes"
           description="Icon libraries, packs and creation tools"
           gradient="from-red-500 to-rose-500"
         />
         <CategoryCard
           title="UI Components"
+          slug="ui-components"
           icon="layout"
           description="Ready-to-use interface components and kits"
           gradient="from-violet-500 to-indigo-500"
