@@ -1,30 +1,30 @@
 {
-  "name": "collections",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "postbuild": "next-sitemap",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "lucide-react": "^0.479.0",
-    "next": "^15.2.4",
-    "next-sitemap": "^4.2.3",
-    "phosphor-react": "^1.4.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@tailwindcss/postcss": "^4.0.17",
-    "@types/node": "22.5.5",
-    "@types/react": "18.3.7",
-    "@types/react-dom": "18.3.0",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^4.0.17",
-    "typescript": "5.6.2"
-  }
+	"name": "collections",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"postbuild": "next-sitemap",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"lucide-react": "^0.503.0",
+		"next": "^15.3.1",
+		"next-sitemap": "^4.2.3",
+		"phosphor-react": "^1.4.1",
+		"react": "19.1.0",
+		"react-dom": "19.1.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@tailwindcss/postcss": "^4.1.4",
+		"@types/node": "22.14.1",
+		"@types/react": "19.1.2",
+		"@types/react-dom": "19.1.2",
+		"postcss": "^8.5.3",
+		"tailwindcss": "^4.1.4",
+		"typescript": "5.8.3"
+	}
 }
