@@ -10,8 +10,8 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"lucide-react": "^0.503.0",
-		"next": "^15.3.1",
+		"lucide-react": "^0.511.0",
+		"next": "^15.3.2",
 		"next-sitemap": "^4.2.3",
 		"phosphor-react": "^1.4.1",
 		"react": "19.1.0",
@@ -19,12 +19,12 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@tailwindcss/postcss": "^4.1.4",
-		"@types/node": "22.14.1",
-		"@types/react": "19.1.2",
-		"@types/react-dom": "19.1.2",
-		"postcss": "^8.5.3",
-		"tailwindcss": "^4.1.4",
+		"@tailwindcss/postcss": "^4.1.8",
+		"@types/node": "22.15.24",
+		"@types/react": "19.1.6",
+		"@types/react-dom": "19.1.5",
+		"postcss": "^8.5.4",
+		"tailwindcss": "^4.1.8",
 		"typescript": "5.8.3"
 	}
 }

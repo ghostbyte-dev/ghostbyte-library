@@ -1,4 +1,5 @@
 import { GhostIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -16,7 +17,16 @@ export default function Footer() {
             Library
           </span>
         </div>
-        <p>© {new Date().getFullYear()} Ghostbyte. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()}{" "}
+          <Link
+            href="https://ghostbyte.dev"
+            className="hover:underline hover:text-white"
+          >
+            Ghostbyte
+          </Link>
+          . All rights reserved.
+        </p>
       </div>
     </footer>
   );
