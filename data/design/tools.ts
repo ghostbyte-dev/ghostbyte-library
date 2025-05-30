@@ -125,6 +125,17 @@ const designToolsData: ICollection = {
       ]
     },
     {
+      name: "Penpot",
+      description: "Penpot is an Open Source design and prototyping platform that enables collaborative work with a suite of tools designed for both designers and developers.",
+      url: "https://https://penpot.app/",
+      logo: "design/tools/penpot.png",
+      screenshot: "design/tools/screen_canva.png",
+      tags: [
+        { name: "freemium" },
+        { name: "os" }
+      ]
+    },
+    {
       name: "haikei",
       description: "Generate unique SVG design assets",
       url: "https://haikei.app/",
