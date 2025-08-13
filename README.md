@@ -1,3 +1,5 @@
+# Ghostbyte Library
+
 ![Screenshot of the landing page of Ghostbyte Library](https://github.com/daniebeler/ghostbyte-library/blob/5ecd29cd9bcb91b6acfa86f4bce90b7680e76d67/readme-images/ghostbyte_library_home.png)
 
 Ghostbyte Library is a collection of many useful websites and tools. They are sorted by category and include some tags to quickly find the right one for your needs.
@@ -9,7 +11,7 @@ Tags:
 - Paid
 - RSS
 
-Live URL: [https://library.ghostbyte.dev](https://library.ghostbyte.dev)
+Website: [library.ghostbyte.dev](https://library.ghostbyte.dev)
 
 ![Screenshot of icons page of Ghostbyte Library](https://github.com/daniebeler/ghostbyte-library/blob/5ecd29cd9bcb91b6acfa86f4bce90b7680e76d67/readme-images/ghostbyte_library_icons.png)
 
@@ -18,7 +20,7 @@ Live URL: [https://library.ghostbyte.dev](https://library.ghostbyte.dev)
 Clone the repository
 
 ```
-git clone https://github.com/daniebeler/buckets-of-bookmarks.git
+git clone https://github.com/ghostbyte-dev/ghostbyte-library.git
 ```
 
 Install the required packages
@@ -32,3 +34,14 @@ Run the app
 ```
 npm run dev
 ```
+
+<br>
+
+## 👻 A Ghostbyte Production
+
+![Ghostbyte banner](https://github.com/ghostbyte-dev/ghostbyte-website/blob/53ed21675d8306f4c6885ae0653b2805ee5b2e06/assets/ghostbyte_banner.png)
+
+Have questions, feedback, or just want to say hi? Reach out to us and we’ll get back to you!
+
+Website: [ghostbyte.dev](https://ghostbyte.dev)  
+Email: [hey@ghostbyte.dev](mailto:hey@ghostbyte.dev)
