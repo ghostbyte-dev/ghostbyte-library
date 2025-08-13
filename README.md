@@ -4,13 +4,6 @@
 
 Ghostbyte Library is a collection of many useful websites and tools. They are sorted by category and include some tags to quickly find the right one for your needs.
 
-Tags:
-- Open Source
-- Free
-- Freemium
-- Paid
-- RSS
-
 Website: [library.ghostbyte.dev](https://library.ghostbyte.dev)
 
 <br>
