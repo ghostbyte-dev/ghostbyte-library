@@ -1,6 +1,6 @@
 # Ghostbyte Library
 
-![Screenshot of the landing page of Ghostbyte Library](https://github.com/daniebeler/ghostbyte-library/blob/5ecd29cd9bcb91b6acfa86f4bce90b7680e76d67/readme-images/ghostbyte_library_home.png)
+![Screenshot of the landing page of Ghostbyte Library](https://github.com/ghostbyte-dev/ghostbyte-library/blob/5b515d55a66fe56c976e8a01182c8e132e6f86dd/assets/ghostbyte_library.png)
 
 Ghostbyte Library is a collection of many useful websites and tools. They are sorted by category and include some tags to quickly find the right one for your needs.
 
@@ -13,7 +13,7 @@ Tags:
 
 Website: [library.ghostbyte.dev](https://library.ghostbyte.dev)
 
-![Screenshot of icons page of Ghostbyte Library](https://github.com/daniebeler/ghostbyte-library/blob/5ecd29cd9bcb91b6acfa86f4bce90b7680e76d67/readme-images/ghostbyte_library_icons.png)
+<br>
 
 ## Setup
 
