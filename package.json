@@ -12,6 +12,7 @@
 	"dependencies": {
 		"lucide-react": "^0.511.0",
 		"next": "^15.3.2",
+		"next-plausible": "^3.12.4",
 		"next-sitemap": "^4.2.3",
 		"phosphor-react": "^1.4.1",
 		"react": "19.1.0",
