@@ -1,4 +1,4 @@
-const siteUrl = 'https://buckets-of-bookmarks.daniebeler.com'
+const siteUrl = 'https://library.ghostbyte.dev'
 
 module.exports = {
     siteUrl,
