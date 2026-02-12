@@ -65,10 +65,6 @@ export const iconMap: Record<
     gradient: "from-rose-500 to-red-700",
     icon: LayoutTemplate,
   },
-  "AI Art": {
-    gradient: "from-sky-500 to-indigo-600",
-    icon: Brush,
-  },
   Games: {
     gradient: "from-red-500 to-pink-600",
     icon: Gamepad2,

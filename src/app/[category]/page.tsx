@@ -4,7 +4,6 @@ import { Heart } from "lucide-react";
 import Footer from "../../components/Footer";
 
 const categoryTitles: { [key: string]: string } = {
-  "ai-art": "AI Art",
   fonts: "Typography",
   extensions: "Browser Extensions",
   "best-practices": "Best Practices",
@@ -53,13 +52,13 @@ export async function generateMetadata({
     title: `${categoryName} - Ghostbyte Library`,
     description: `Explore the best collection of ${category.replace(
       /-/g,
-      " "
+      " ",
     )} curated by Ghostbyte Library.`,
     openGraph: {
       title: `${category.replace(/-/g, " ").toUpperCase()} - Ghostbyte Library`,
       description: `Explore the best collection of ${category.replace(
         /-/g,
-        " "
+        " ",
       )} curated by Ghostbyte Library.`,
       url: `https://ghostbyte.dev/${category}`,
       siteName: "Ghostbyte Library",

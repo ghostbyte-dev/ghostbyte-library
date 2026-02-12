@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import type { ICollection, IItem } from "../types/types";
-import aiArtData from "../../data/design/ai-art";
 import browserExtensionsData from "../../data/design/extensions";
 import typographyData from "../../data/design/fonts";
 import bestPracticesData from "../../data/design/best-practices";
@@ -21,9 +20,7 @@ const Collection = ({ collection }: { collection: string }) => {
   const [categoryData, setCategoryData] = useState<ICollection | null>(null);
 
   useEffect(() => {
-    if (collection === "ai-art") {
-      setCategoryData(aiArtData);
-    } else if (collection === "fonts") {
+    if (collection === "fonts") {
       setCategoryData(typographyData);
     } else if (collection === "extensions") {
       setCategoryData(browserExtensionsData);

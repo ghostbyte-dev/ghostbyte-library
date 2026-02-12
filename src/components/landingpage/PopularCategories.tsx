@@ -31,9 +31,9 @@ export default function PopularCategories() {
           gradient="from-purple-500 to-pink-500"
         />
         <CategoryCard
-          title="AI Art"
-          slug="ai-art"
-          icon="palette"
+          title="Illustrations"
+          slug="illustrations"
+          icon="image"
           description="AI-powered art generation tools and resources"
           gradient="from-cyan-500 to-blue-500"
         />

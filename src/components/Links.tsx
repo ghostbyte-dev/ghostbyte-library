@@ -54,10 +54,6 @@ const navLinks = [
         path: "/systems",
       },
       {
-        title: "AI Art",
-        path: "/ai-art",
-      },
-      {
         title: "Games",
         path: "/games",
       },
