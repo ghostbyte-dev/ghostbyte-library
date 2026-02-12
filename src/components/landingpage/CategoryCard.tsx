@@ -47,11 +47,7 @@ export function CategoryCard({
 
   return (
     <Link href={`/${slug}`}>
-      <div className="group relative overflow-hidden rounded-xl border border-purple-800/30 bg-black/20 p-6 transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20">
-        <div
-          className={`absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br ${gradient} opacity-20 blur-2xl transition-all group-hover:opacity-30`}
-        />
-
+      <div className="group relative h-full overflow-hidden rounded-xl bg-dark p-6 transition-all hover:shadow-lg hover:shadow-purple-900/20">
         <div className="relative z-10">
           <div
             className={`inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br ${gradient} mb-4`}

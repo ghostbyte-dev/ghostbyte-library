@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import type { ICollection, IItem } from "../types/types";
-import Card from "./Card";
 import aiArtData from "../../data/design/ai-art";
 import browserExtensionsData from "../../data/design/extensions";
 import typographyData from "../../data/design/fonts";
@@ -58,15 +57,11 @@ const Collection = ({ collection }: { collection: string }) => {
       {categoryData && (
         <>
           <div className="container mt-36 mb-20 flex flex-col items-center">
-            {/*  <div className={`p-2 rounded-md ${gradient}`}>
-              <Icon size={20} className="text-white" />
-            </div> */}
-
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-300">
+            <h1 className="text-3xl tracking-tighte uppercase font-extrabold sm:text-5xl">
               {categoryData.name}
             </h1>
 
-            <p className="max-w-[900px] mt-4 text-zinc-400 text-center md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] mt-4 text-center">
               {categoryData.introduction}
             </p>
           </div>

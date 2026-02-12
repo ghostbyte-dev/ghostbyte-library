@@ -2,22 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  House,
-  DeviceMobileSpeaker,
-  Palette,
-  TextAa,
-  GameController,
-  BezierCurve,
-  PaintBrush,
-  Camera,
-  ImageSquare,
-  Lightbulb,
-  Smiley,
-  ThumbsUp,
-  Wrench,
-  PuzzlePiece,
-} from "phosphor-react";
 import { iconMap } from "../lib/Icons";
 import { HouseIcon } from "lucide-react";
 

@@ -1,1 +1,22 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-light: #f2ede4;
+    --color-dark: #262626;
+}
+
+@layer base {
+
+    html,
+    body {
+        @apply text-neutral-600 font-light bg-light
+    }
+
+    h1, h2, h3 {
+        @apply text-neutral-800 font-extrabold
+    }
+
+    button {
+        cursor: pointer;
+    }
+}

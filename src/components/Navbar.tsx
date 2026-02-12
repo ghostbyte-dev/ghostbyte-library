@@ -21,9 +21,9 @@ const Navbar = () => {
   }, [toggle]);
 
   return (
-    <div className="block md:hidden fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#030014]/60 ">
+    <div className="block md:hidden fixed top-0 left-0 w-full z-50 bg-light/80 ">
       {/* Navbar Header */}
-      <div className="flex justify-between backdrop-blur-xl items-center px-4 py-4">
+      <div className="flex justify-between backdrop-blur-xs items-center px-4 py-4">
         <Link className="" href="/">
           <div className="flex items-center">
             <img
@@ -34,9 +34,8 @@ const Navbar = () => {
               alt="Ghostbyte logo white"
             />
 
-            <span className="text-xl font-bold text-white">Ghostbyte</span>
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-text text-transparent ml-2">
-              Library
+            <span className="text-xl font-bold text-dark">
+              Ghostbyte Library
             </span>
           </div>
         </Link>
@@ -46,7 +45,7 @@ const Navbar = () => {
           onClick={toggleMenu}
           aria-expanded={toggle}
           aria-controls="mobile-menu"
-          className="text-white focus:outline-none"
+          className="text-dark focus:outline-none"
         >
           {toggle ? <X size={24} /> : <List size={24} />}
         </button>
@@ -54,7 +53,7 @@ const Navbar = () => {
 
       {/* Overlay Menu (Entire overlay is scrollable) */}
       {toggle && (
-        <div className="fixed inset-0 bg-[#030014]/60 backdrop-blur-xl p-4 overflow-y-auto">
+        <div className="fixed inset-0 bg-dark p-4 overflow-y-auto">
           <div className="w-full max-w-md p-4 rounded-lg mx-auto">
             {/* Close Button */}
             <div className="flex justify-end">

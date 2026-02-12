@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-[#040217] scroll-smooth selection:bg-blue-900 selection:text-white"
+      className="bg-[#f2ede4] scroll-smooth selection:bg-blue-900 selection:text-white"
     >
       <body className={`${inter.className} antialiased min-h-screen `}>
         <PlausibleProvider
@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="w-full">
             <div className="flex flex-row m-0 pt-[45px] md:pt-0 h-screen">
               <div className=" p-0 hidden md:block w-64 fixed h-full">
-                <div className="p-3 h-full overflow-scroll bg-[#030014]/60 border-r border-white/10 backdrop-blur-xl">
+                <div className="p-3 h-full overflow-scroll bg-[#262626]">
                   <Links />
                 </div>
               </div>

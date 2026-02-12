@@ -51,7 +51,7 @@ export function ResourceCard({
     <Link
       href={url}
       target="_blank"
-      className="group h-full relative block overflow-hidden rounded-xl border border-purple-800/30 bg-black/20 p-6 transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
+      className="group h-full relative block overflow-hidden rounded-xl bg-[#262626] p-6 transition-all hover:border-purple-700/50 hover:shadow-lg hover:shadow-purple-900/20"
     >
       <div className="relative z-10">
         <div className="flex justify-between items-start mb-4">

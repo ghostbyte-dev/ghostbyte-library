@@ -4,12 +4,8 @@ export default function PopularCategories() {
   return (
     <section className="py-12 px-6" id="popular">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent mb-4">
-          Popular Categories
-        </h2>
-        <p className="text-gray-300">
-          Browse some of the most visited sections in our library.
-        </p>
+        <h2 className="text-3xl font-bold mb-4">Popular Categories</h2>
+        <p>Browse some of the most visited sections in our library.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
