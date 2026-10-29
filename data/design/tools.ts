@@ -6,6 +6,17 @@ const designToolsData: ICollection = {
 		"A collection of powerful design-focused tools to enhance your creative workflow. From SEO checkers and pattern generators to mockup creators and image optimizers, these resources help you refine and perfect your designs with ease.",
 	items: [
 		{
+			name: "imgmov Last Frame Extractor",
+			description: "Export a local video ending as a PNG, with nearby-frame previews for motion references and shot handoffs.",
+			url: "https://imgmov.com/extract-last-frame-from-video",
+			logo: "default",
+			tags: [
+				{
+					name: "free",
+				},
+			],
+		},
+		{
 			name: "Toptal Checklist",
 			description: "Web Developer Checklist",
 			url: "https://www.toptal.com/developers/webdevchecklist",
